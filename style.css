@@ -1,0 +1,552 @@
+/*  Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #5c677d;
+}
+
+.header {
+  background-color: #0466c8;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.header .header__logo {
+  padding: 10px;
+  font-size: 2rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.header .burguer {
+  display: none;
+}
+.header .menu {
+  list-style-type: none;
+  display: flex;
+}
+.header .menu .menu__item {
+  padding: 10px;
+  color: white;
+}
+
+.main {
+  background-color: white;
+  min-height: 1200px;
+  padding-bottom: 40px;
+  /* Services */
+}
+.main .hero-image {
+  width: 100%;
+  min-height: 460px;
+  background-color: gray;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1631603090989-93f9ef6f9d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.main .hero-image .hero-content {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main .hero-image .hero-content .hero-text {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 1px 2px black;
+  display: block;
+}
+.main .hero-image .hero-content .hero-button {
+  padding: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.main .services {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.main .services .services__card {
+  width: 20%;
+  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  min-height: auto;
+}
+.main .services .services__card .card__container {
+  padding: 2px 16px;
+}
+.main .services .services__card .card__container p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px;
+}
+.main .services .services__card img {
+  width: 100%;
+}
+.main .marketcap {
+  background-color: #0099ff;
+  min-height: 550px;
+  position: relative;
+  bottom: 5px;
+}
+.main .marketcap p {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 0 2px 2px black;
+  padding-bottom: 20px;
+}
+.main .contact {
+  min-height: 500px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-items: space-between;
+}
+.main .contact .suscribe-text {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #777777;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}
+.main .contact fieldset {
+  width: 45%;
+  margin: 10px auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.main .contact fieldset .form {
+  min-height: 400px;
+  padding: 20px 0 30px 0;
+}
+.main .contact fieldset .form label {
+  font-size: 1.1rem;
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+.main .contact fieldset .form input {
+  width: 90%;
+  height: 2.5rem;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  display: block;
+}
+.main .contact fieldset .form #submit {
+  margin-top: 20px;
+}
+.main .contact .contact-us {
+  max-height: 438px;
+}
+.main .contact .contact-us p {
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 2rem;
+  font-family: "Ubuntu", sans-serif;
+  color: #777777;
+}
+.main .contact .contact-us .social-networks {
+  display: flex;
+  padding: 20px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.main .contact .contact-us .social-networks .icon1 {
+  color: #2d5a94;
+}
+.main .contact .contact-us .social-networks .icon2 {
+  color: #2aa9e0;
+}
+.main .contact .contact-us .social-networks .icon3 {
+  color: #ff0000;
+}
+.main .contact .contact-us .social-networks .icon4 {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.main .contact .contact-us .social-networks i {
+  font-size: 4rem;
+  padding: 20px;
+}
+.main .contact .contact-us .social-networks i:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.2);
+}
+
+.foot {
+  min-height: 200px;
+  background-color: #343a40;
+  padding: 30px;
+}
+.foot .foot__flex {
+  display: grid;
+  grid-template-areas: "coinmarket social copyright";
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+}
+.foot .foot__flex span, .foot .foot__flex p, .foot .foot__flex a, .foot .foot__flex h3 {
+  color: white;
+}
+.foot .foot__flex .foot__coinmarket {
+  grid-area: "coinmarket";
+  padding: 15px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.foot .foot__flex .foot__coinmarket a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.foot .foot__flex .foot__social {
+  grid-area: "social";
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+.foot .foot__flex .foot__social .foot__networks {
+  color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 2rem;
+}
+.foot .foot__flex .foot__social .foot__networks i {
+  padding: 5px;
+}
+.foot .foot__flex .foot__copyright {
+  grid-area: "copyright";
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+}
+.foot .foot__flex .foot__copyright .copyright__reserved {
+  font-size: 1.4rem;
+}
+.foot .foot__flex .foot__copyright .copyright__author {
+  font-size: 1.2rem;
+  line-height: 40px;
+}
+.foot .foot__flex .foot__copyright .copyright__text {
+  line-height: 20px;
+}
+
+@media (max-width: 1300px) {
+  .main .services {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .main .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 15px;
+  }
+  .main .services .services__card {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    min-height: auto;
+  }
+  .main .services .services__card .card__container {
+    padding: 0;
+  }
+  .main .contact {
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+  }
+  .main .contact fieldset {
+    width: 90%;
+  }
+  .main .contact .contact-us .social-networks i:hover {
+    transition: none;
+    transform: none;
+  }
+  .foot .foot__flex {
+    width: 100%;
+  }
+  .foot .foot__flex .foot__coinmarket {
+    padding-top: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .foot .foot__flex .foot__social {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5px;
+  }
+  .foot .foot__flex .foot__social .foot__networks {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+  }
+  .foot .foot__flex .foot__social .foot__networks i {
+    padding: 15px;
+  }
+  .foot .foot__flex .foot__copyright {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5px;
+  }
+  .foot .foot__flex .foot__copyright .copyright__reserved {
+    display: block;
+  }
+  .foot .foot__flex .foot__copyright .copyright__author {
+    display: none;
+  }
+  .foot .foot__flex .foot__copyright .copyright__text {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .foot .foot__flex {
+    display: grid;
+    grid-template-areas: "coinmarket" "social" "copyright";
+    grid-template-columns: 1fr;
+  }
+  .foot .foot__flex .foot__coinmarket {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .foot .foot__flex .foot__social {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .foot .foot__flex .foot__social .foot__networks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .foot .foot__flex .foot__social .foot__networks i {
+    padding: 5px;
+    font-size: 4rem;
+  }
+  .foot .foot__flex .foot__copyright {
+    grid-area: "copyright";
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .foot .foot__flex .foot__copyright .copyright__reserved {
+    font-size: 1.4rem;
+  }
+  .foot .foot__flex .foot__copyright .copyright__author {
+    font-size: 1.2rem;
+    line-height: 40px;
+  }
+  .foot .foot__flex .foot__copyright .copyright__text {
+    text-align: left;
+    line-height: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .main .marketcap div {
+    width: 95% !important;
+  }
+  .main .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    width: 100%;
+  }
+  .main .services .services__card {
+    display: block;
+    width: 100%;
+    margin: 0;
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    min-height: 420px;
+  }
+  .main .services .services__card .card__container {
+    padding: 10px;
+  }
+  .main .services .services__card .card__container p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0;
+  }
+  .main .contact {
+    display: flex;
+    width: 99%;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .contact .suscribe-text {
+    font-size: 2rem;
+  }
+  .main .contact .contact-us {
+    width: 100%;
+  }
+  .main .contact fieldset {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 95%;
+  }
+  .main .contact fieldset .form {
+    width: 100%;
+  }
+  .main .contact fieldset .form label {
+    font-size: 1.1rem;
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+  .main .contact fieldset .form input {
+    width: 90%;
+    height: 2.5rem;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    display: block;
+  }
+  .main .contact fieldset .form #submit {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: 6;
+    width: 100%;
+  }
+  .header .responsive {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: #0466c8;
+    width: 100%;
+    left: 100%;
+    z-index: 5;
+    transition: all 0.3s;
+  }
+  .header .menu .menu__item {
+    font-size: 2.5rem;
+    padding: 30px;
+  }
+  .header .menu__visible {
+    left: 0%;
+  }
+  .header .burguer {
+    display: inline-block;
+    padding: 15px;
+    color: white;
+    font-size: 1.5rem;
+  }
+  .main .services {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+  }
+  .main .services .services__card {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin: 10px;
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    min-height: 200px;
+    height: 200px;
+  }
+  .main .services .services__card .card__container {
+    padding: 2px 16px;
+  }
+  .main .services .services__card .card__container p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+  }
+  .main .services .services__card img {
+    width: 100%;
+  }
+}
+@media (max-width: 422px) {
+  .main .services .services__card {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 90%;
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    min-height: 200px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .main .services .services__card img {
+    width: 100%;
+  }
+  .main .contact {
+    min-height: auto;
+  }
+  .main .contact fieldset {
+    display: none;
+  }
+  .main .contact .suscribe-text {
+    display: none;
+  }
+  .main .contact .contact-us {
+    margin-top: 0;
+  }
+  .main .contact .contact-us .social-networks {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
