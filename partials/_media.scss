@@ -1,0 +1,461 @@
+// DESKTOP >
+
+@media (max-width:1300px) {
+.main{
+
+    .services{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+
+
+}
+
+
+
+}
+
+
+// TABLET LANDSCAPE
+
+@media (max-width:1024px) {
+
+    .main{
+
+          // services
+
+          .services{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+            gap:15px;
+    
+            .services__card{
+            display: flex;
+            width: 100%;
+            margin: 0;
+            box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
+            min-height: auto;
+
+            .card__container{
+                padding: 0;
+    
+            }
+    
+    
+            }
+
+            
+
+    
+        }
+
+        .contact {
+            display: flex;
+            width: 100%;
+            flex-flow: column wrap;
+            fieldset {
+                width:90%;
+            }
+
+            .contact-us{
+                .social-networks{
+                    i:hover{
+                        transition: none;
+                    transform: none;
+                }
+                }
+            }
+    
+    }
+
+}
+
+
+.foot {
+
+    .foot__flex{
+        width: 100%;
+    
+        .foot__coinmarket{
+            padding-top:5px;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: flex-start;
+        }
+    
+        .foot__social{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 5px;
+
+
+    
+            .foot__networks{
+                display: grid;
+                justify-items: center;
+                grid-template-columns: 1fr 1fr;
+                width: 50%;
+            i{padding:15px;
+            }
+            }
+        }
+    
+        .foot__copyright{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 5px;
+
+            .copyright__reserved{
+                display: block;
+            }
+    
+            .copyright__author{
+                display: none;
+            }
+
+            .copyright__text{
+                 display: block;
+            }
+        }
+
+
+    }
+
+
+}
+
+
+}
+
+// TABLET PORTRAIT // MOBILE LANDSCAPE
+
+
+@media (max-width:768px){
+    .foot{ 
+
+
+    .foot__flex{
+
+        display: grid;
+        grid-template-areas: "coinmarket"
+                            "social"
+                             "copyright";
+                             grid-template-columns: 1fr;
+
+                             .foot__coinmarket{
+                                display: flex;
+                                flex-flow: column nowrap;
+                                align-items: flex-start;
+                                justify-content: center;
+                            }
+                            .foot__social{
+                                display: flex;
+                                flex-flow: column nowrap;
+                                align-items: flex-start;
+                                justify-content: flex-start;
+                        
+                                .foot__networks{
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                i{padding:5px;
+                                font-size:4rem;}
+                                }
+                            }
+
+                            .foot__copyright{
+                                grid-area: "copyright";
+                                display: flex;
+                                flex-flow: column nowrap;
+                                align-items: flex-start;
+                                justify-content: center;
+                        
+                                .copyright__reserved{
+                                    font-size: 1.4rem;
+                                }
+                        
+                                .copyright__author{
+                                    font-size: 1.2rem;
+                                    line-height: 40px;
+                                }
+                        
+                                .copyright__text{
+                                    text-align: left;
+                                    line-height: 20px;
+                                }
+                            }
+
+    }
+
+
+
+    }    
+}
+
+
+
+
+@media (max-width:768px){
+
+
+    .main{
+
+        // marketcap
+
+        .marketcap div {
+            width: 95% !important;
+        }
+
+
+        // services
+
+        .services{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 15px;
+            column-gap: 10px;
+            width: 100%;
+    
+            .services__card{
+            display: block;
+            width: 100%;
+            margin: 0;
+            box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
+            min-height: 420px;
+
+            .card__container{
+                padding: 10px;
+    
+                p {
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    text-align: center;
+                    padding: 0;
+                }
+    
+            }
+    
+    
+            }
+
+            
+
+    
+        }
+
+
+    // Form
+
+    .contact {
+        display: flex;
+        width: 99%;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        .suscribe-text {
+            font-size: 2rem;
+        }
+
+        .contact-us{
+            width: 100%;
+        }
+
+    fieldset{
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 95%;
+
+        .form {
+            width: 100%;
+
+            label{
+                font-size: 1.1rem;
+                display: block;
+                padding: 10px;
+                text-align: center;
+                                    }
+
+            input {
+                width: 90%;
+                height: 2.5rem;
+                font-size: 1.1rem;
+                margin: 0 auto;
+                display: block;
+            }
+
+            #submit {
+                margin-top: 20px;
+            }
+
+
+
+
+        }
+
+
+    }
+
+}
+
+}
+
+
+
+    
+}
+
+
+// MOBILE 
+
+@media (max-width:480px) {
+
+
+    .header{
+        display: block;
+        position: fixed;
+        top: 0;
+        z-index: 6;
+        width: 100%;
+        .responsive{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            background-color: #0466c8;
+            width: 100%;
+            left: 100%;
+            z-index: 5;
+            transition: all 0.3s;
+            .menu__item {
+                font-size: 2.5rem;
+                padding: 30px;
+            }
+        }
+
+        .menu__visible {
+        left: 0% ;
+        }
+
+        
+    .burguer{
+        display: inline-block;
+        padding: 15px;
+        color: white;
+        font-size: 1.5rem;
+    }
+    }
+
+    .main {
+        
+    // SERVICES
+        .services{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: flex-start;
+            width: 90%;
+    
+            .services__card{
+            display: flex;
+            flex-flow: row nowrap;
+            width: 100%;
+            margin: 10px;
+            box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
+            min-height: 200px;
+            height: 200px;
+    
+            .card__container{
+                padding: 2px 16px;
+    
+                p {
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    text-align: center;
+                    padding: 10px;
+                }
+    
+            }
+    
+            img {
+                width:100%;
+            }
+    
+            }
+        }
+
+    }
+
+
+    
+}
+
+
+// MOBILE
+
+@media (max-width:422px){
+    .main {
+        
+        // SERVICES
+            .services{
+        
+                .services__card{
+                display: flex;
+                flex-flow: column nowrap;
+                width: 90%;
+                box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
+                min-height: 200px;
+                height: auto;
+                margin: 0 auto;
+                img {
+                    width: 100%;
+                }
+        
+                }
+            }
+
+            // Contact us
+            .contact {
+                min-height: auto;
+               fieldset{
+                display: none;
+               }
+               .suscribe-text{display: none;}
+
+            
+            .contact-us{
+                margin-top: 0;
+
+
+                .social-networks {
+                    display: grid;
+                    justify-items: center;
+                    grid-template-columns: 1fr 1fr;
+                    width: 100%;
+
+    
+                }
+            }
+
+        }
+
+
+        }
+
+}
+
