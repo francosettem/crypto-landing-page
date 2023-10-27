@@ -1,4 +1,5 @@
 preview.png
 *.css.map
 *.map
-partials/_media.scss
+node_modules/
+*.json

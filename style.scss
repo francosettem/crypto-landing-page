@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -40,6 +39,7 @@ body {
         .menu__item {
             padding: 10px;
             color: white;
+            cursor:pointer;
         }
     }
 }
@@ -139,6 +139,10 @@ body {
                     text-shadow: 0 2px 2px black;
                     padding-bottom: 20px;
                 }
+
+                .crypto_charts{
+                    width: 900px;
+                }
             }
 
 
@@ -156,6 +160,7 @@ body {
                     color: #777777;
                     text-align: center;
                     font-family: 'Ubuntu', sans-serif;
+                    padding-left: 15px;
                 }
                 
                 fieldset{
@@ -270,7 +275,7 @@ body {
             grid-area: "coinmarket";
             padding:15px;
             display: flex;
-            flex-flow: column nowrap;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             a{text-decoration: none;
@@ -324,4 +329,4 @@ body {
 
 }
 
-@import './partials/media';
+@import './partials/media.scss';

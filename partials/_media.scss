@@ -52,6 +52,12 @@
     
         }
 
+        .marketcap{
+            .crypto_charts{
+                width: 90%;
+            }
+        }
+
         .contact {
             display: flex;
             width: 100%;
@@ -304,6 +310,29 @@
 
 }
 
+}
+
+.foot {
+
+    .foot__flex{
+
+    .foot__coinmarket{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .foot__social
+    {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .foot__copyright{
+        align-items: center;
+        justify-content: center;
+    }
+
+    }
 }
 
 
